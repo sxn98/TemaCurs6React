@@ -1,11 +1,15 @@
+function getID(btn){
 
-
+  console.log(btn.id)
+}
 
 function App() {
   return (
+    
     <table className="tabla">
+      <tbody>
       <tr >
-        <td >X</td>
+        <td className="element1">X</td>
         <td>O</td>
         <td>X</td>
       </tr>
@@ -19,6 +23,8 @@ function App() {
         <td>O</td>
         <td>X</td>
       </tr>
+      <button className="123" onClick={getID(this)}>asdf</button>
+      </tbody>
     </table>
   );
 }
