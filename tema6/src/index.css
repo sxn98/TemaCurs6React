@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tabla {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(180, 180, 246);
+  padding: 5px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+tr{
+  color:red;
+  
+}
+td{
+  text-align: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border:2px solid;
+  border-color: black;
+}
