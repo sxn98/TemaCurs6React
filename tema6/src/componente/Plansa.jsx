@@ -1,9 +1,13 @@
-function getID(btn){
 
-    console.log(btn.id)
-  }
 
 const Plansa=()=>{
+
+  let getID=(e)=>{
+
+    console.log(e.target.id)
+
+  }
+
     return (
     
         <table className="tabla">
@@ -23,7 +27,7 @@ const Plansa=()=>{
             <td>O</td>
             <td>X</td>
           </tr>
-          <button className="123" onClick={getID(this)}>asdf</button>
+          <button id="test"className="123" onClick={getID}>asdf</button>
           </tbody>
         </table>
       );
