@@ -1,10 +1,11 @@
+import mutare from "../mutari";
 
 
 const Plansa=()=>{
 
-  let getID=(e)=>{
+  let refresh=()=>{
 
-    console.log(e.target.id)
+    window.location.reload()
 
   }
 
@@ -13,22 +14,23 @@ const Plansa=()=>{
         <table className="tabla">
           <tbody>
           <tr >
-            <td className="element1">X</td>
-            <td>O</td>
-            <td>X</td>
+            <td id="1" onClick={mutare}></td>
+            <td id="2" onClick={mutare}></td>
+            <td id="3" onClick={mutare}></td>
           </tr>
           <tr >
-            <td>O</td>
-            <td>X</td>
-            <td>O</td>
+            <td id="4" onClick={mutare}></td>
+            <td id="5" onClick={mutare}></td>
+            <td id="6" onClick={mutare}></td>
           </tr>
           <tr>
-            <td>X</td>
-            <td>O</td>
-            <td>X</td>
+            <td id="7" onClick={mutare}></td>
+            <td id="8" onClick={mutare}></td>
+            <td id="9" onClick={mutare}></td>
           </tr>
-          <button id="test"className="123" onClick={getID}>asdf</button>
+          
           </tbody>
+          <button id="refresh" onClick={refresh}>Restart</button>
         </table>
       );
 }
