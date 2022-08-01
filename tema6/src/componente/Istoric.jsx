@@ -1,9 +1,9 @@
 import '../index.css';
-import mutare from '../mutari'; 
+
 const Istoric=()=>{
     
     
-    return(
+    return(  // reprezinta un fel de istoric al mutarilor
         <label id="istoric"className='istoric'></label>
     )
     
