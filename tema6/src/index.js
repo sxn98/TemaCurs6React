@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Plansa from './componente/Plansa';
+import Istoric from './componente/Istoric';
 
+
+import Plansa from './componente/Plansa';
+import Restart from './componente/Restart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Plansa>
-
-    <App />
     </Plansa>
+
+    <Restart/>
+    <Istoric/>
   </React.StrictMode>
 );
 

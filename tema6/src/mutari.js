@@ -14,8 +14,10 @@ let mutare=(e)=>{
         tur++
     }
 
-
+    let history=`${e.target.innerText} pe pozitia ${e.target.id}`
     console.log(`${e.target.innerText} pe pozitia ${e.target.id}`)
+    document.getElementById("istoric").textContent=document.getElementById("istoric").textContent+"\n"+history
+    localStorage.setItem('istoric',JSON.stringify(history))
 }
 
 

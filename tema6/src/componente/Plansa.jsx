@@ -3,12 +3,6 @@ import mutare from "../mutari";
 
 const Plansa=()=>{
 
-  let refresh=()=>{
-
-    window.location.reload()
-
-  }
-
     return (
     
         <table className="tabla">
@@ -30,7 +24,7 @@ const Plansa=()=>{
           </tr>
           
           </tbody>
-          <button id="refresh" onClick={refresh}>Restart</button>
+          
         </table>
       );
 }
